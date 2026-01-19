@@ -4,43 +4,93 @@
     <meta charset="UTF-8">
     <title>WSP Tareas Dirigidas</title>
 
-    <!-- Redirección automática en 0 segundos -->
-    <meta http-equiv="refresh" content="0; url=https://wa.me/584127232038?text=Hola,%20quiero%20mas%20información%20sobre%20las%20tareas%20dirigidas!">
-
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
-        .contenedor {
+        .card {
+            width: 100%;
+            max-width: 420px;
+            padding: 30px 25px;
             text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #f0f0f0;
         }
 
         .imagen {
-            width: 300px;
-            max-width: 80%;
+            width: 100%;
+            max-width: 260px;
+            margin-bottom: 20px;
         }
 
-        .texto {
-            margin-top: 15px;
-            font-size: 18px;
+        .mensaje {
+            font-size: 15.5px;
             color: #333;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .boton-wsp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25D366, #1ebe5d);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 26px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 999px;
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .boton-wsp:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
+        }
+
+        .nota {
+            margin-top: 18px;
+            font-size: 12.5px;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <div class="contenedor">
+    <div class="card">
+
+        <!-- Si tienes imagen, úsala. Si no, puedes borrar esta línea -->
         <img src="redirigiendo.png" alt="WSP Tareas Dirigidas" class="imagen">
-        <div class="texto">Redirigiendo a WhatsApp...</div>
+
+        <div class="mensaje">
+            Por políticas de Meta, existen restricciones para redireccionar
+            automáticamente a WhatsApp en Venezuela.
+            <br><br>
+            Haz clic en el botón de abajo y con gusto te atenderemos por WhatsApp.
+        </div>
+
+        <a class="boton-wsp"
+           href="https://wa.me/584127232038?text=Hola,%20quiero%20mas%20información%20sobre%20las%20tareas%20dirigidas!"
+           target="_blank">
+            💬 Ir a WhatsApp
+        </a>
+
+        <div class="nota">
+            Atención rápida y personalizada
+        </div>
+
     </div>
 
 </body>
 </html>
-
